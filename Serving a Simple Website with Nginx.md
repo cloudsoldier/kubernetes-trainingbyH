@@ -65,7 +65,7 @@ sudo vi /etc/nginx/sites-available/nginx.yourdomain_name
 
 server {
     listen 80;
-    server_name nginx.hhali-shop.com;
+    server_name nginx.yourdomain-name which you bought from Godaddy;
 
     root /var/www/html;
     index index.html;
@@ -79,3 +79,17 @@ server {
 }
 
 ```
+---
+
+What does this mean?
+listen 80; → Nginx listens on HTTP port 80.
+
+server_name nginx.hhali-shop.com; → This config is for your domain.
+
+root /var/www/html; → Where Nginx looks for files.
+
+index index.html; → The default file served.
+
+location / { try_files $uri $uri/ =404; } → Serves the file if it exists; otherwise, returns 404.
+
+access_log / error_log → Where logs will be saved.
