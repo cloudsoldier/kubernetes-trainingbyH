@@ -21,6 +21,7 @@ Steps
 - sudo vi index.html
 - paste this HTML content
 
+```
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -47,3 +48,4 @@ Steps
     <p>If you see this page, your deployment worked! ✅</p>
 </body>
 </html>
+```
