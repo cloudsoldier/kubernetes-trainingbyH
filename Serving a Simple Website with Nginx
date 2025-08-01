@@ -1,3 +1,79 @@
+Here is the **complete content in pure `.md` format**, fully structured and professional for a README or guide:
+
+````markdown
+# **Serving a Simple Website with Nginx on Your Personal Domain**
+
+In this exercise, you will learn how to host a simple **index page (HTML website)** using the **Nginx web server** on a Linux VM in Azure.
+
+---
+
+## **Steps**
+
+### **1. Create and Connect to an Azure Linux VM**
+- Provision a **Linux virtual machine** in **Azure**.
+- Log in to the VM using **SSH**:
+
+```bash
+ssh <username>@<your-vm-public-ip>
+````
+
+---
+
+### **2. Install Nginx**
+
+* Update package lists:
+
+```bash
+sudo apt update
+```
+
+* Install Nginx:
+
+```bash
+sudo apt install nginx -y
+```
+
+---
+
+### **3. Enable and Start Nginx**
+
+* Enable Nginx to start on boot:
+
+```bash
+sudo systemctl enable nginx
+```
+
+* Start Nginx:
+
+```bash
+sudo systemctl start nginx
+```
+
+* **Check Nginx status**:
+
+```bash
+systemctl status nginx
+```
+
+---
+
+### **4. Create Your Webpage**
+
+1. Navigate to the web root directory:
+
+```bash
+cd /var/www/html
+```
+
+2. Create a new **index.html** file:
+
+```bash
+sudo vi index.html
+```
+
+3. Paste the following **HTML content**:
+
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -24,3 +100,42 @@
     <p>If you see this page, your deployment worked! ✅</p>
 </body>
 </html>
+```
+
+---
+
+### **5. Test Your Website**
+
+* Open your browser and visit:
+
+```
+http://<your-vm-public-ip>
+```
+
+* You should see the **DevOps Deployment Test** page. ✅
+
+---
+
+### **Optional: Point Your Personal Domain**
+
+1. Update your domain **DNS A record** to point to your VM's public IP.
+2. Access your website using your domain:
+
+```
+http://yourdomain.com
+```
+
+---
+
+### ✅ **Result**
+
+You now have a working **Nginx web server** serving a **custom HTML page** on your **Azure Linux VM**.
+
+```
+
+---
+
+This is now **fully in Markdown format** and ready to be saved as `README.md`.  
+
+Do you want me to also create a **Markdown version with collapsible command sections** to make it look more professional for GitHub?
+```
