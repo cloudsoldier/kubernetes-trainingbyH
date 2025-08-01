@@ -1,26 +1,3 @@
-Serving a Simple Website with Nginx on your personal domain
-
-- In this excercise I will show you guys a simple index page or website with nginx web server
-Steps
-- Create a Linux virtual vm in Azure 
-- log on to the VM
-- Install Nginx
-- sudo apt update
-- sudo apt install nginx -y
-- Enable and start Nginx
-- sudo systemctl enable nginx
-- sudo systemctl start nginx
-
-** Check Status
-
-- systemctl status nginx
-
-** Create your webpage
-- cd /var/www/html
-- create an index.html file
-- sudo vi index.html
-- paste this HTML content
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
