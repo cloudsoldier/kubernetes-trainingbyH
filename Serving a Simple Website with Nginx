@@ -1,79 +1,26 @@
-Here’s a **cleaned-up and professional Markdown document** ready for **GitHub**, which you can save as `README.md` for your project:
+Serving a Simple Website with Nginx on your personal domain
 
-````markdown
-# **Serving a Simple Website with Nginx on Your Personal Domain**
+- In this excercise I will show you guys a simple index page or website with nginx web server
+Steps
+- Create a Linux virtual vm in Azure 
+- log on to the VM
+- Install Nginx
+- sudo apt update
+- sudo apt install nginx -y
+- Enable and start Nginx
+- sudo systemctl enable nginx
+- sudo systemctl start nginx
 
-This guide demonstrates how to deploy a **simple HTML website** using the **Nginx web server** on a **Linux virtual machine in Azure**.
+** Check Status
 
----
+- systemctl status nginx
 
-## **Steps**
+** Create your webpage**
+- cd /var/www/html
+- create an index.html file
+- sudo vi index.html
+- paste this HTML content
 
-### **1. Create and Connect to an Azure Linux VM**
-1. Create a **Linux virtual machine** in **Azure**.
-2. Connect to your VM using **SSH**:
-
-```bash
-ssh <username>@<your-vm-public-ip>
-````
-
----
-
-### **2. Install Nginx**
-
-1. Update package lists:
-
-```bash
-sudo apt update
-```
-
-2. Install Nginx:
-
-```bash
-sudo apt install nginx -y
-```
-
----
-
-### **3. Enable and Start Nginx**
-
-1. Enable Nginx to start automatically:
-
-```bash
-sudo systemctl enable nginx
-```
-
-2. Start the Nginx service:
-
-```bash
-sudo systemctl start nginx
-```
-
-3. **Check the Nginx status**:
-
-```bash
-systemctl status nginx
-```
-
----
-
-### **4. Create Your Webpage**
-
-1. Navigate to the web root directory:
-
-```bash
-cd /var/www/html
-```
-
-2. Create an **index.html** file:
-
-```bash
-sudo vi index.html
-```
-
-3. Paste the following **HTML content**:
-
-```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -100,45 +47,3 @@ sudo vi index.html
     <p>If you see this page, your deployment worked! ✅</p>
 </body>
 </html>
-```
-
----
-
-### **5. Test Your Website**
-
-* Open your browser and navigate to:
-
-```
-http://<your-vm-public-ip>
-```
-
-* You should see the **DevOps Deployment Test** page. ✅
-
----
-
-## **Optional: Map Your Personal Domain**
-
-1. Update your domain **DNS A record** to point to your VM's public IP.
-2. Access your website using your domain:
-
-```
-http://yourdomain.com
-```
-
----
-
-### ✅ **Result**
-
-You have successfully hosted a **simple HTML website** with **Nginx** on your **Azure Linux VM**.
-This method is ideal for **testing deployments** or **learning DevOps basics**.
-
-```
-
-This version is:
-
-- ✅ **Clean and professional** for GitHub  
-- ✅ Includes **syntax-highlighted code blocks**  
-- ✅ Easy for beginners to follow  
-
-Do you want me to **also add a section with a diagram** of the setup for a more visual GitHub README?
-```
