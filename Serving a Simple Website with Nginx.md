@@ -21,7 +21,7 @@ Steps
 - sudo vi index.html
 - paste this HTML content
 
-<!DOCTYPE html>
+'''
 <html lang="en">
 <head>
     <meta charset="UTF-8">
