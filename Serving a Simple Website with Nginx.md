@@ -51,3 +51,15 @@ Steps
 ```
 
 At this point, if you go to your **server IP** (e.g., `http://Your public IP from Azure portal`), you’ll already see the page.
+
+## **Step 3: Create an Nginx Configuration File for Your Site**
+
+Instead of editing the **default config**, we create a **new site config**.
+
+---
+
+### 1️⃣ Create a config file:
+
+```bash
+sudo vi /etc/nginx/sites-available/nginx.hhali-shop.com
+
