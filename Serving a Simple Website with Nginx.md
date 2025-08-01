@@ -61,5 +61,21 @@ Instead of editing the **default config**, we create a **new site config**.
 ### 1️⃣ Create a config file:
 
 ```bash
-sudo vi /etc/nginx/sites-available/nginx.hhali-shop.com
+sudo vi /etc/nginx/sites-available/nginx.yourdomain_name
 
+server {
+    listen 80;
+    server_name nginx.hhali-shop.com;
+
+    root /var/www/html;
+    index index.html;
+
+    location / {
+        try_files $uri $uri/ =404;
+    }
+
+    access_log /var/log/nginx/nginx.yourdomain_name.access.log;
+    error_log /var/log/nginx/nginx.yourdomain_name.log;
+}
+
+```
