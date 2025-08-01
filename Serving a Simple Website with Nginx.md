@@ -49,3 +49,5 @@ Steps
 </body>
 </html>
 ```
+
+At this point, if you go to your **server IP** (e.g., `http://Your public IP from Azure portal`), you’ll already see the page.
