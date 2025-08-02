@@ -1,11 +1,14 @@
 Serving a Simple Website with Nginx on your personal domain
 
 - In this excercise I will show you guys a simple index page or website with nginx web server
+
+
 Steps
 - Create a Linux virtual vm in Azure 
-- log on to the VM
-- Create NSG rule to allow port 80
+- log on to the VM via Terminal
+- Create NSG rule to allow port 80 using Azure portal
 - Install Nginx
+- Use below commands
 - sudo apt update
 - sudo apt install nginx -y
 - Enable and start Nginx
@@ -17,9 +20,10 @@ Steps
 - systemctl status nginx
 
 ** Create your webpage**
-- cd /var/www/html
+- in your terminal
+- Go to cd /var/www/html
 - create an index.html file
-- sudo vi index.html
+- Use this command sudo vi index.html
 - paste this HTML content
 
 ```
@@ -45,7 +49,7 @@ Steps
     </style>
 </head>
 <body>
-    <h1>🚀 DevOps Deployment Test</h1>
+    <h1>🚀 DevOps Deployment Test by Kash</h1>
     <p>If you see this page, your deployment worked! ✅</p>
 </body>
 </html>
@@ -56,7 +60,7 @@ At this point, if you go to your **server IP** (e.g., `http://Your public IP fro
 ## **Step 3: Create an Nginx Configuration File for Your Site**
 
 Instead of editing the **default config**, we create a **new site config**.
-
+this will incorporte with our domain, and my domain is cloudsoldier.co.uk
 ---
 
 ### 1️⃣ Create a config file:
