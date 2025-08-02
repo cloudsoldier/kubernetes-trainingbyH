@@ -4,6 +4,7 @@ Serving a Simple Website with Nginx on your personal domain
 Steps
 - Create a Linux virtual vm in Azure 
 - log on to the VM
+- Create NSG rule to allow port 80
 - Install Nginx
 - sudo apt update
 - sudo apt install nginx -y
