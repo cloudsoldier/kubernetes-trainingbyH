@@ -89,7 +89,7 @@ server {
 What does this mean?
 listen 80; → Nginx listens on HTTP port 80.
 
-server_name nginx.hhali-shop.com; → This config is for your domain.
+server_name nginx.cloudsoldier.co.uk; → This config is for your domain.
 
 root /var/www/html; → Where Nginx looks for files.
 
