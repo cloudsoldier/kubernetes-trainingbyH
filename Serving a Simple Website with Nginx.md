@@ -22,6 +22,8 @@ Steps
 - sudo systemctl enable nginx
 - sudo systemctl start nginx
 
+  ### Step 2: Create Web page ###
+
 ** Check Status
 
 - systemctl status nginx
