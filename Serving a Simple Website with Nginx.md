@@ -6,6 +6,13 @@ Serving a Simple Website with Nginx on your personal domain
 Steps
 - Create a Linux virtual vm in Azure 
 - log on to the VM via Terminal
+- To avoid logging as sudo user
+  ```
+  sudo passwd root
+  # type your linux vm password
+  # Then
+  ssh root@yourvmpublicip
+  ```
 - Create NSG rule to allow port 80 using Azure portal
 - Install Nginx
 - Use below commands
